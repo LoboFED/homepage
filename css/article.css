@@ -1,0 +1,76 @@
+.article__title {
+    text-align: center;
+    color: #ffffff;
+    background-color: #411b1b81;
+}
+
+.article__contener {
+    padding: 0 10px;
+    margin-bottom: 1%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 1px #541C1C;
+    text-shadow: 1px 1px 1px #541C1C;
+}
+
+.article__contener--section {
+    padding: 1px 10px 5px;
+    margin-bottom: 2%;
+    color: #d9e7ce;
+    background-color: #411b1b81;
+}
+
+.article__objectPosition {
+    text-align: center;
+}
+
+.article__picture {
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 1px 1px 2px 1px #541C1C;
+}
+
+.article__subTitle {
+    text-align: center;
+    border-radius: 5px;
+    text-shadow: 1px 1px 1px #541C1C;
+    color: #ffffff;
+}
+
+.article__paragraph {
+    text-align: justify;
+    text-indent: 2em;
+}
+
+.article__tableContener {
+    overflow-x: auto;
+}
+
+.article__table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    color: #e6e6e6;
+    width: 99%;
+}
+
+.article__tableCell {
+    border: 1px solid;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.article__tableHeader {
+    background-color: #644c4c;
+    color: #fff;
+    font-weight: normal;
+}
+
+.article__tableRow:hover {
+    background-color: #756b6b;
+}
+
+.article__caption {
+    caption-side: bottom;
+    text-align: right;
+    margin: 5px 0 5px;
+}

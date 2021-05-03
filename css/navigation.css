@@ -1,0 +1,24 @@
+.navigation__list {
+    list-style-type: none;
+    height: auto;
+    max-width: 250px;
+    padding: 1%;
+    padding-left: 0;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 1px #541C1C;
+    background-color: #411b1b81;
+}
+
+.navigation__link {
+    margin: 0 auto;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #e3e9de;
+}
+
+.navigation__link:hover {
+    color: #1a0b50a6;
+}
