@@ -1,29 +1,26 @@
 console.log("Helo World!");
 
+
 let theme = document.querySelector(".body__theme");
 
 let colorButton = document.querySelector(".js-colorButton");
 
+let themeName = document.querySelector(".js-themeName");
+
 let postscriptButton = document.querySelector(".js-postscriptButton");
+
+let postscriptButtonText = document.querySelector(".js-postscriptButtonText");
 
 let postscript = document.querySelector(".body__postscript");
 
 colorButton.addEventListener("click", () => {
-    theme.classList.toggle("body__theme--brightBackground"); theme.classList.toggle("body__theme--darkBackground");
+    theme.classList.toggle("body__theme--darkBackground");
 
-    if (colorButton.innerText === "Ciemne tło") {
-        colorButton.innerText = "Jasne tło";
-    } else {
-        colorButton.innerText = "Ciemne tło";
-    }
+    themeName.innerText = theme.classList.contains("body__theme--darkBackground") ? "Jasne" : "Ciemne";
 });
 
 postscriptButton.addEventListener("click", () => {
     postscript.classList.toggle("body__hidden");
 
-    if (postscriptButton.innerText === "Usuń P.S.") {
-        postscriptButton.innerText = "Dodaj P.S.";
-    } else {
-        postscriptButton.innerText = "Usuń P.S.";
-    }
+    postscriptButtonText.innerText = postscript.classList.contains("body__hidden") ? "Dodaj" : "Usuń";
 });

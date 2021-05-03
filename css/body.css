@@ -15,9 +15,6 @@ html {
     max-width: 1010px;
     margin: 0 auto 25px;
     border-radius: 5px;
-}
-
-.body__theme--brightBackground {
     background-color: #d3cac9a6;
 }
 
