@@ -1,26 +1,36 @@
-console.log("Helo World!");
+{
+    const welcome = () => {
+        console.log("Helo World!");
+    }
 
+    const toggleBackground = () => {
+        const theme = document.querySelector(".body__theme");
+        const themeName = document.querySelector(".js-themeName");
 
-let theme = document.querySelector(".body__theme");
+        theme.classList.toggle("body__theme--darkBackground");
+        themeName.innerText = theme.classList.contains("body__theme--darkBackground") ? "Jasne" : "Ciemne";
+    };
 
-let colorButton = document.querySelector(".js-colorButton");
+    const hiddenPostscript = () => {
+        const postscriptButtonText = document.querySelector(".js-postscriptButtonText");
+        const postscript = document.querySelector(".body__postscript");
 
-let themeName = document.querySelector(".js-themeName");
+        postscript.classList.toggle("body__hidden");
+        postscriptButtonText.innerText = postscript.classList.contains("body__hidden") ? "Dodaj" : "Usuń";
+    };
 
-let postscriptButton = document.querySelector(".js-postscriptButton");
+    const init = () => {
 
-let postscriptButtonText = document.querySelector(".js-postscriptButtonText");
+        const colorButton = document.querySelector(".js-colorButton");
+        const postscriptButton = document.querySelector(".js-postscriptButton");
 
-let postscript = document.querySelector(".body__postscript");
+        colorButton.addEventListener("click", toggleBackground);
+        postscriptButton.addEventListener("click", hiddenPostscript);
 
-colorButton.addEventListener("click", () => {
-    theme.classList.toggle("body__theme--darkBackground");
+        welcome();
 
-    themeName.innerText = theme.classList.contains("body__theme--darkBackground") ? "Jasne" : "Ciemne";
-});
+    };
 
-postscriptButton.addEventListener("click", () => {
-    postscript.classList.toggle("body__hidden");
+    init();
 
-    postscriptButtonText.innerText = postscript.classList.contains("body__hidden") ? "Dodaj" : "Usuń";
-});
+}
